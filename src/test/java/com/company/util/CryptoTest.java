@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by OLDU on 20/09/2016.
  */
-public class CryptStringTest {
+public class CryptoTest {
 
     @Test
     public void encryptDecryptTest() {
@@ -15,16 +15,11 @@ public class CryptStringTest {
         String encrypted;
         String decrypted;
 
-        CryptString.setPassword(password);
-        encrypted = CryptString.getEncryptedString(source);
-        decrypted = CryptString.getDecryptedString(encrypted);
-
-        System.out.println("src: " + source);
-        System.out.println("enc: " + encrypted);
-        System.out.println("dec: " + decrypted);
+        Crypto.setPassword(password);
+        encrypted = Crypto.getEncrypted(source);
+        decrypted = Crypto.getDecrypted(encrypted);
 
         Assert.assertTrue("Decrypted text should be \"Hello, world! 1234\"", decrypted.equals("Hello, world! 1234"));
-
     }
 
 }

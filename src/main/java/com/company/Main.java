@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.util.CryptString;
+import com.company.util.Crypto;
 
 public class Main {
 
@@ -13,13 +13,13 @@ public class Main {
 
         System.out.println("src: " + source);
 
-        CryptString.setPassword(password);
+        Crypto.setPassword(password);
 
-        encrypted = CryptString.getEncryptedString(source);
+        encrypted = Crypto.getEncrypted(source);
 
         System.out.println("enc: " + encrypted);
 
-        decrypted = CryptString.getDecryptedString(encrypted);
+        decrypted = Crypto.getDecrypted(encrypted);
 
         System.out.println("dec: " + decrypted);
         
