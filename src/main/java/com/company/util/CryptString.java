@@ -22,4 +22,5 @@ public enum CryptString {
     public static String getDecryptedString(String stringToDecrypt) {
         return textEncryptor.decrypt(stringToDecrypt);
     }
+
 }
