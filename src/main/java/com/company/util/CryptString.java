@@ -7,7 +7,7 @@ import org.jasypt.util.text.StrongTextEncryptor;
  */
 public enum CryptString {
 
-    INSTANCE;
+    ;
 
     private static final StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
 
