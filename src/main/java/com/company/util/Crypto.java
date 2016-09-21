@@ -4,6 +4,9 @@ import org.jasypt.util.text.StrongTextEncryptor;
 
 /**
  * Enum to encrypt/decrypt a String with a password using Jasypt library (http://www.jasypt.org/)
+ * This Enum is composed by an instance of StrongTextEncryptor class from the Jasypt library and
+ * to use this class, you may need to download and install the Java Cryptography Extension (JCE)
+ * Unlimited Strength Jurisdiction Policy Files.
  * @author odurand
  * @version 1.0
  * date 2016-09-20
